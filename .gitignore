@@ -12,3 +12,4 @@ Thumbs.db
 # コンテンツ (Obsidianで管理)
 *.md
 !/CLAUDE.md
+!/.claude/skills/*/*.md

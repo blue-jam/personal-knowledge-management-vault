@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Obsidian — volatile state (ユーザー固有のウィンドウ・タブ状態)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Obsidian — 設定ファイルはバージョン管理する (.obsidian/ 全体は除外しない)
+
+# コンテンツ (Obsidianで管理)
+!CLAUDE.md
+*.md

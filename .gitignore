@@ -10,5 +10,5 @@ Thumbs.db
 # Obsidian — 設定ファイルはバージョン管理する (.obsidian/ 全体は除外しない)
 
 # コンテンツ (Obsidianで管理)
-!CLAUDE.md
 *.md
+!/CLAUDE.md

@@ -33,7 +33,7 @@ description: 日次ジャーナルを他の記事に反映する
 | フォルダ | 対象 |
 |--------|------|
 | `Wiki/` | 技術用語・概念のリファレンス |
-| `AHC/` | AtCoderヒューリスティックコンテストの記録・戦略 |
+| `CP/` | 競技プログラミングコンテスト（AtCoder Heuristic Contest、AtCoder Beginner Contestなど）の記録、戦略、解法 |
 | `Software Design/` | 技術誌『Software Design』の読書メモ |
 | `Book/` | 書籍の読書メモ |
 | `Notes/` | その他のメモ |

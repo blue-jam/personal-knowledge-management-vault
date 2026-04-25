@@ -2,8 +2,11 @@ name: Export Skills
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
 
 jobs:
   export:
@@ -14,9 +17,12 @@ jobs:
       - name: Run export-skills.sh
         run: bash export-skills.sh
 
-      - name: Upload skill artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: skills
-          path: "*.zip"
-          if-no-files-found: error
+      - name: Publish each skill as a release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="${GITHUB_REF_NAME}"
+          for zip in *.zip; do
+            skill="${zip%.zip}"
+            gh release upload "$tag" "$zip" --clobber
+          done

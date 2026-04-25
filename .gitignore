@@ -9,3 +9,5 @@ Thumbs.db
 *.md
 !/CLAUDE.md
 !/.claude/skills/*/*.md
+
+*.zip
